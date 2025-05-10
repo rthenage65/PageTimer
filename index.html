@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Timer</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" sizes="512x512" href="./favicon.svg">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Page Timer</h1>
+        <input type="number" id="startPage" placeholder="First Page" required>
+        <input type="number" id="endPage" placeholder="Last Page" required>
+        <input type="text" id="timePerPage" value="3:00" placeholder="Time (mm:ss)" required>
+        <button id="startBtn">Start</button>
+    </div>
+    <div class="timer-container">
+        <div class="page" id="page">
+            <div class="page-number" id="pageNumber">Page: 0</div>
+            <div class="progress-line" id="progressLine"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
