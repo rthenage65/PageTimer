@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,13 @@
         <input type="number" id="startPage" placeholder="First Page" required>
         <input type="number" id="endPage" placeholder="Last Page" required>
         <input type="text" id="timePerPage" value="3:00" placeholder="Time (mm:ss)" required>
-        <button id="startBtn">Start</button>
+        <button id="startBtn">Begin Reading</button>
+        <div class="secondaryButtonContainer">
+            <button class="secondaryButton" id="pauseResumeButton" title="pause/resume" onclick="pauseResumeButton()">⏸</button>
+            <button class="secondaryButton" id="restartPageButton" title="restart page" onclick="restartPageButton()">↻</button>
+            <button class="secondaryButton" id="previousPageButton" title="previous page" onclick="previousPageButton()">⏮</button>
+            <button class="secondaryButton" id="nextPageButton" title="next page" onclick="nextPageButton()">⏭</button>
+        </div>
     </div>
     <div class="timer-container">
         <div class="page" id="page">
